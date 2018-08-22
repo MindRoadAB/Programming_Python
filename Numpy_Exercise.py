@@ -1,6 +1,6 @@
 import numpy as np
 
-# Warm Up 1
+# Warm Up 7
 # Repeat and practice the same exercise that are given in the PowerPoint.
 # Write a python program to covert the values of Centigrade into Fahrenheit degree. Print the result after converting.
 
@@ -12,8 +12,10 @@ np_degree_Fah = np_degree_Cel*1.8 +32
 
 print(np_degree_Fah)
 
-# Warm Up 2
+# Ex 7
 # Write a Python Program Using NumPy to interchange the rows of the Matrix into the columns. Print the result for both matrixes.
+# and print the shape, type and data type of the matrix.
+# Hint: Use swapaxes
 '''mat1 = np.array([[1, 2, 3],[4, 5, 6]])
 print(mat1)
 
@@ -28,14 +30,14 @@ print(type(mat2))
 print(mat1.shape)
 print(mat2.dtype)'''
 
-# Warm up 3
-# Write a Python Program to show if there's an element from the first matrix is existed in the second matrix.
-# Print out:
+# Ex 8
+# Write a Python Program Using NumPy to create two matrices and print the following tasks:
 # The location of the common element(s) between the two matrices.
 # The Value(s) of the common element(s).
 # The Minimum value of the Mat1.
 # The Maximum Value of the Mat1 in each columns and rows.
 # The mean value of the Mat2 in each row.
+# Hint: Use in1d(), amin(), amax(), etc.
 
 '''arr1 = np.array([[10, 20, 30], [40, 50, 60]])
 arr2 = np.array([[10, 25, 30], [40, 52, 62]])
@@ -59,7 +61,7 @@ print(np.amax(arr1, axis=1))
 # The mean value of the Mat2 in each row.
 print(np.mean(arr2, axis=1))'''
 
-# Ex 6
+# Ex 9
 #  Write a Python Program using NumPy and Matplotlib to show the result as the figure below!
 '''import matplotlib.pyplot as plt
 
@@ -82,7 +84,7 @@ plt.title("Cosine")
 # Show the figure
 plt.show()'''
 
-# Ex 7
+# Warm UP 8 Image Processing
 from scipy.misc.pilutil import imsave, imresize, imread, imfilter, imrotate
 '''from PIL import Image, ImageFilter
 
