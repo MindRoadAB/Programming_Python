@@ -2,11 +2,11 @@
 # Write a python program to check if the number is even or odd, the program will ask the user to input a number and print out a message.
 # Hint: Use input(), print(), %.
 
-''' num = int(input("Enter a number: "))
+num = int(input("Enter a number: "))
 if(num % 2) == 0:
     print("{0} is even number".format(num))
 else:
-    print("{0} is odd number".format(num)) '''
+    print("{0} is odd number".format(num))
 
 
 # Warm Up 2
@@ -14,7 +14,7 @@ else:
 # Hint: Use len(), def reverse(word)
 
 
-'''def reverse(word):
+def reverse(word):
     x = ''
     for i in range(len(word)):
         x += word[len(word)-1-i]
@@ -27,22 +27,22 @@ if x == word:
     print("This is a Palindrome")
 else:
     print("This is NOT a Palindrome")
-'''
+
 
 # Warm Up 3
 # Write a Python Function that add two integral numbers in a string form and then print out the result.
 
-'''def add(num1,num2):
+def add(num1,num2):
     print(int(num1)+int(num2))
 
-add("5","6") '''
+add("5","6")
 
 # Warm Up 4
 # Write a Python program using dictionary to generate integral number and its square number (n, n*n) between range of numbers. and print the result.
 # The program should ask the user to input the range of the numbers, e.g. range(1,11)
 # Hint: dict(), range.
 
-'''num1 = int(input("Enter the first number"))
+num1 = int(input("Enter the first number"))
 num2 = int(input("Enter the second number"))
 
 d = dict()
@@ -50,7 +50,7 @@ d = dict()
 for n in range(num1,num2+1):
     d[n] = n*n
 
-print(d)'''
+print(d)
 
 # Warm Up 5
 # Write a Python Program to generate a list and a tuple with given numbers from the user, the numbers are separated by using comma and print the result for both list and tuple types.
@@ -58,7 +58,7 @@ print(d)'''
 # list before sorting.
 # Hint: split(), sort(), join(), revers().
 
-'''values = input("Input the sequence of numbers: ")
+values = input("Input the sequence of numbers: ")
 
 my_list = values.split(',')
 tuple = tuple(my_list)
@@ -70,9 +70,9 @@ new_list = list(set(my_list))
 new_list.sort()
 print("Sorted list: ", new_list)
 new_list.sort(reverse=True)
-print("Sorted reversed list: ", new_list)'''
+print("Sorted reversed list: ", new_list)
 
-#
+
 
 # Warm Up 6
 # Write a python program to check leap year, the program will ask the user to
@@ -93,7 +93,7 @@ leap_year(year) '''
 # Write a Python program that checks whether June 24th on any given year is a Wednesday.
 # Create an input field that allows the user to enter the year and shows the result if it’s correct or not!
 # Hint: import datetime, import calendar calender def().
-'''import datetime
+import datetime
 import calendar
 
 def date_year(year):
@@ -105,11 +105,11 @@ def date_year(year):
 
 
 year = int(input("Enter the year: "))
-date_year(year) '''
+date_year(year)
 
 # Improve your program by asking the user to check a range (year from the user, the year we are now) of years
 # if whether June 24th on the range of years is on Wednesday.
-'''import calendar
+import calendar
 
 def date_year(year):
     y = year
@@ -124,14 +124,14 @@ def date_year(year):
 
 
 year = int(input("Enter the year: "))
-date_year(year)'''
+date_year(year)
 
 # Ex 2
 # Write a Python Program for a guessing Game number, in this program ask the user to enter the guessing number,
 # print out a message to show if the number is too low, too high, correct number and the number of trying times to guess the correct number.
 #  Show a message if the user wants to exit from the game.
 # Hint: import random
-'''import random
+import random
 
 rand_num = random.randint(1, 9)
 guess = 0
@@ -153,7 +153,7 @@ while guess != rand_num and guess != "exit":
     elif guess > rand_num:
         print("the number you guessed is too high")
     else:
-        print(f"Congratulation!! and it took {counter} times to guess the correct number!")'''
+        print(f"Congratulation!! and it took {counter} times to guess the correct number!")
 
 # Ex 3
 # Write a Python program that calculate the number of lower, upper care letters, space and digits.
@@ -161,7 +161,7 @@ while guess != rand_num and guess != "exit":
 # as well as the number(s) of pressing space and the number(s) of digit(s).
 # Hint: for, def, islower(), dict ={" upper": 0}
 
-'''
+
 def check_str(char):
     no = {"Upper_case": 0, "Lower_case": 0, "Space": 0, "Digit":0}
     for check in char:
@@ -181,11 +181,11 @@ no_char = check_str(string_sent)
 print("The number(s) of Upper Case letters: ", no_char["Upper_case"])
 print("The number(s) of Lower Case letters: ", no_char["Lower_case"])
 print("The number(s) of Space: ", no_char["Space"])
-print("The number(s) of Digit: ", no_char["Digit"]) '''
+print("The number(s) of Digit: ", no_char["Digit"])
 
 # Write the same program as in the Ex3 but using regular expression method!
 # Hint: import re, r"[A-Z]", re.findall
-'''
+
 import re
 
 def check_str(char):
@@ -228,14 +228,14 @@ def check_str(char):
 
 check_str(input(" Enter any sentence: "))
 
-'''
+
 
 # Ex 4
 #  a Python Class (Rectangle) holding data attributes (_length, _width),
 # and create a  method to calculate the area of the rectangular.
 # Ask the user to input the length and width of the rectangular and print the result of the area.
 
-'''class Rectangle:
+class Rectangle:
 
     def __init__(self, _length, _width):
         self._length = _length
@@ -250,7 +250,7 @@ L = int(input("Enter the Length of the Rectangular: "))
 
 rectang = Rectangle(W,L)
 print("Area of the Rectangular:  ",rectang.area())
-'''
+
 
 
 # Ex 5
@@ -344,12 +344,12 @@ man1.remove_emp(emp1)
 man1.remove_emp(emp2)
 man1.display_all_emp()
 # print(man1.remove_emp(emp1))
-# print(man1.add_emp(emp1)) '''
+# print(man1.add_emp(emp1))
 
 
 # Ex 6 Write a python program using Module Method to create a simple calculator program. (add, subtract, Multiply, divide, power).
 # Remember to create two files: 1. contain the all methods, e.g. Calc.py 2. contain the main program + from ....import statement.
-'''from calc import addition, subtraction, division, multiplication, power
+from calc import addition, subtraction, division, multiplication, power
 
 
 print("Select operation.")
@@ -378,7 +378,7 @@ elif choice == '4':
     print(num1, "/", num2, " = ", division(num1, num2))
 
 elif choice == '5':
-    print(num1, "^", num2, " = ", power(num1, num2))'''
+    print(num1, "^", num2, " = ", power(num1, num2))
 
 
 ############### The Exercises (7- 9) and Warm up exercises (7 & 8) are in the Numpy_Exercise.py file ##################
@@ -386,19 +386,19 @@ elif choice == '5':
 # Ex 10
 # Write a python program to read a specific line from a text file. The user enter the specific line,
 # the program should be able to read the line either from the bottom or from the top of the page(first line or last line).
-'''def read_line(f,n):
+def read_line(f,n):
     with open(f,"r") as file:
         read_file = file.readline()
         print(list(file)[n])
 
 n = int(input("Input the number(s) of line(s): "))
-read_line('employee_Salary.txt',n)'''
+read_line('employee_Salary.txt',n)
 
 
 
 # To read and find a line from a large file could take times to get the specific line.
 # Read more about linecache.getline() and solve the same exercise using licecache.
-'''import linecache
+import linecache
 def read_line(f,n):
         line = linecache.getline(f,n)
         print("line %i of %s:" % (n, f))
@@ -406,13 +406,13 @@ def read_line(f,n):
 
 n = int(input("Input the number(s) of line(s): "))
 line = read_line("employee_Salary.txt",n)
-print(line)'''
+print(line)
 
 # Ex 11
 # Write a Python program to read multiple line at the same time from the range selected range from the user.
 # Read more about the package itertools and import islice!
 
-'''from itertools import islice
+from itertools import islice
 def read_line(f,n,m):
     with open(f, "r") as file:
         line_cache = islice(file,n,m)
@@ -425,7 +425,7 @@ def read_line(f,n,m):
 n = int(input("Input the first number : "))
 m = int(input("Input the second number : "))
 read_line("employee_Salary.txt",n,m)
-'''
+
 
 
 # Ex 12
@@ -465,7 +465,7 @@ long_short_word("employee_Salary.txt")
 # "a" to append what you want to write to the end of the file.
 # "w" to overwrite to the existing content.
 
-'''
+
 string = "I love MindRoad"
 with open("employee_Salary.txt", "a") as write_file:
     write_file.write(string + '\n')
@@ -486,7 +486,7 @@ f_read.close()
 
 _decompress = gzip.GzipFile("employee_Salary.txt.gz", mode= 'rb')
 with open("employee_Salary_decompress.txt", 'wb') as outfile:
-    shutil.copyfileobj(_decompress,outfile)'''
+    shutil.copyfileobj(_decompress,outfile)
 
 
 ############### The Test Exercises (15- 18) are in the Python_Test_exercise.py file ##################

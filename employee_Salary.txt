@@ -1,11 +1,3 @@
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
-I love MindRoad
+Name,Department,Salary,Company
+Tony,Embedded_Group,30000,MindRoad
+Adam,Academy_Group,35000,MindRoad

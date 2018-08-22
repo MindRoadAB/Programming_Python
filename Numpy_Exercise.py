@@ -16,7 +16,7 @@ print(np_degree_Fah)
 # Write a Python Program Using NumPy to interchange the rows of the Matrix into the columns. Print the result for both matrixes.
 # and print the shape, type and data type of the matrix.
 # Hint: Use swapaxes
-'''mat1 = np.array([[1, 2, 3],[4, 5, 6]])
+mat1 = np.array([[1, 2, 3],[4, 5, 6]])
 print(mat1)
 
 mat2 = np.swapaxes(mat1, 0, 1)
@@ -28,7 +28,7 @@ print(mat2)
 
 print(type(mat2))
 print(mat1.shape)
-print(mat2.dtype)'''
+print(mat2.dtype)
 
 # Ex 8
 # Write a Python Program Using NumPy to create two matrices and print the following tasks:
@@ -39,7 +39,7 @@ print(mat2.dtype)'''
 # The mean value of the Mat2 in each row.
 # Hint: Use in1d(), amin(), amax(), etc.
 
-'''arr1 = np.array([[10, 20, 30], [40, 50, 60]])
+arr1 = np.array([[10, 20, 30], [40, 50, 60]])
 arr2 = np.array([[10, 25, 30], [40, 52, 62]])
 
 # Find the Location of the common elements
@@ -59,11 +59,11 @@ print(np.amax(arr1, axis=0))
 print(np.amax(arr1, axis=1))
 
 # The mean value of the Mat2 in each row.
-print(np.mean(arr2, axis=1))'''
+print(np.mean(arr2, axis=1))
 
 # Ex 9
 #  Write a Python Program using NumPy and Matplotlib to show the result as the figure below!
-'''import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 x = np.arange(0 ,3*np.pi, 0.1)
@@ -82,11 +82,11 @@ plt.plot(x, y_cos, '*')
 plt.title("Cosine")
 
 # Show the figure
-plt.show()'''
+plt.show()
 
 # Warm UP 8 Image Processing
 from scipy.misc.pilutil import imsave, imresize, imread, imfilter, imrotate
-'''from PIL import Image, ImageFilter
+from PIL import Image, ImageFilter
 
 # To read and show an image from the disk
 img = Image.open('MindRoad.jpg')
@@ -114,5 +114,5 @@ try:
     img_gray.save('MindRoad_Gray.jpg')
     print("Image is saved")
 except AttributeError:
-    print(f"Couldn't save the image {img_gray}")'''
+    print(f"Couldn't save the image {img_gray}")
 
