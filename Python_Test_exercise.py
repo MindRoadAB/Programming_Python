@@ -50,7 +50,7 @@ class Evaluate(TestCase):
 
 
 
-#Ex 18
+#Ex 18 _ deleted from the orginal file exercise! 
 # Write a Unit Test Python program to check if the given full name is equal or not, as well as if the email address is correct or not for the given name.
 # Unittest.mock is a library for testing in Python, which allows you to do a test of a specific function and to do that
 # you need to mock that function. As your code grows eventually you'll need to start adding mocks to your test.
